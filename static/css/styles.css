@@ -1,0 +1,107 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F9FA;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #008080;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Traffic Status Section */
+.traffic-status {
+    text-align: center;
+    padding: 2rem;
+}
+
+.traffic-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+/* Lane Card */
+.lane-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.lane-card:hover {
+    transform: scale(1.05);
+}
+
+/* Traffic Light */
+.signal {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.light-green {
+    background-color: #28a745;
+    color: white;
+}
+
+.light-red {
+    background-color: #dc3545;
+    color: white;
+}
+
+.light-gray {
+    background-color: #6c757d;
+    color: white;
+}
+
+/* Traffic Footage Section */
+.traffic-footage {
+    text-align: center;
+    padding: 2rem;
+    background-color: #e0f7fa;
+    margin-top: 2rem;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+img#traffic-video {
+    width: 70%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Recommendations */
+.recommendations {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #FFB400;
+    margin-top: 2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #008080;
+    color: white;
+    margin-top: 2rem;
+}
