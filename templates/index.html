@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Traffic Monitoring</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>🚦 AI Traffic Monitoring System</h1>
+    </header>
+
+    <main>
+        <!-- Traffic Status Section -->
+        <section class="traffic-status">
+            <h2>Live Traffic Updates</h2>
+            <div class="traffic-container">
+                <div class="lane-card" id="lane1">
+                    <h3>Lane 1</h3>
+                    <p>Cars Detected: <span id="lane1-count">0</span></p>
+                    <div class="signal light-gray" id="lane1-signal">⚪ Waiting...</div>
+                </div>
+
+                <div class="lane-card" id="lane2">
+                    <h3>Lane 2</h3>
+                    <p>Cars Detected: <span id="lane2-count">0</span></p>
+                    <div class="signal light-gray" id="lane2-signal">⚪ Waiting...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Traffic Footage Section -->
+        <section class="traffic-footage">
+            <h2>Live Traffic Feed</h2>
+            <div class="video-container">
+                <img id="traffic-video" src="{{ url_for('video_feed') }}" alt="Live Traffic Feed">
+            </div>
+        </section>
+
+        <!-- Recommendations Section -->
+        <section class="recommendations">
+            <h2>Traffic Recommendations</h2>
+            <p id="recommendation-text">Analyzing traffic data...</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 AI Traffic Monitoring. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
